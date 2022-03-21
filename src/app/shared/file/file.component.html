@@ -1,16 +1,18 @@
 <div class="mat-form-field-wrapper">
-
-    <div class="mat-form-field-infix file-fileld">
-      <div >
-        <input
-          placeholder="Upload File"
-          type="file"
-          (change)="onFileUploadHandler($event)"
-        />
-        <button mat-icon-button class="icon" aria-label="share icon">
-          <mat-icon>attach_file</mat-icon>
-        </button>
+  <div class="mat-form-field-flex">
+    <div class="file-fileld">
+      <input
+        placeholder="Upload File"
+        type="file"
+        #file
+        (change)="onFileUploadHandler($event)"
+      />
+      <div class="label">
+        {{ fileName }}
       </div>
+      <button mat-icon-button class="icon" aria-label="share icon" (click)="onClick($event)">
+        <mat-icon>folder</mat-icon>
+      </button>
     </div>
- 
+  </div>
 </div>

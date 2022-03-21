@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
   }
 
   onSubmit(): void {
-    console.log('Your order has been submitted', this.homeForm.valid);
+    console.log('Your order has been submitted', this.homeForm.value);
     console.log(this.homeForm.errors);
     // this.homeForm.reset();
   }
