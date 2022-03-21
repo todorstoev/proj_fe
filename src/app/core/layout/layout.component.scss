@@ -1,0 +1,20 @@
+.main {
+  display: grid;
+  grid-template-areas:
+    "h"
+    "b"
+    "f";
+  grid-template-rows: auto 1fr auto;
+
+  height: 100%;
+  .header {
+    grid-area: h;
+  }
+  .content {
+    grid-area: b;
+    padding: 1rem;
+  }
+  footer {
+    grid-area: f;
+  }
+}
