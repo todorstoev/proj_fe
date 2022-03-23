@@ -1,4 +1,4 @@
-<div class="mat-form-field-wrapper">
+<div class="mat-form-field-wrapper" >
   <div class="mat-form-field-flex">
     <div class="file-fileld">
       <input
@@ -7,9 +7,9 @@
         #file
         (change)="onFileUploadHandler($event)"
       />
-      <div class="label">
+      <span class="label" (click)="onClick($event)">
         {{ fileName }}
-      </div>
+      </span>
       <button mat-icon-button class="icon" aria-label="share icon" (click)="onClick($event)">
         <mat-icon>folder</mat-icon>
       </button>

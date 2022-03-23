@@ -32,6 +32,7 @@ export class FileComponent implements OnInit {
 
   onClick(e: Event) {
     e.preventDefault();
+    e.stopPropagation()
     this.file.nativeElement.click();
   }
 
